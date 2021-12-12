@@ -8,66 +8,75 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3 title">WORK DAY SCHEDULER</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead current-time"></p>
     </header>
       <div class="container">
         <div class="row text-center text-middle">
           <div class="col-12">
             <div id="9AM 9" class="row" >
-              <div id="9amHour" value="9" class="col-1 border border-silver topPad time-block";">9AM</div>
-              <textarea id="9" class="col-9 border border-silver description textarea storage" placeholder="Type Notes Here"></textarea>
-              <button id="9AMSaveBTN" data-hour=9 type="button" class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="9AMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div id="9amHour" value="9" class="col-1 time-block">9AM</div>
+              <textarea id="9" class="col-9 border description textarea storage" placeholder="Type Notes Here"></textarea>
+              <button id="9AMSaveBTN" data-hour=9 type="button" class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="9AMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="10AM 10" class="row">
-              <div class="col-1 border border-silver topPad time-block">10AM</div>
-              <textarea id="10" class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=10 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="10AMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">10AM</div>
+              <textarea id="10" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=10 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="10AMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="11AM 11" class="row">
-              <div class="col-1 border border-silver topPad time-block">11AM</div>
-              <textarea id="11" class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=11 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="11AMClearBTN"class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">11AM</div>
+              <textarea id="11" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=11 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="11AMClearBTN"class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="12PM 12" class="row">
-              <div class="col-1 border border-silver topPad time-block">12PM</div>
-              <textarea id="12" class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=12 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="12PMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">12PM</div>
+              <textarea id="12" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=12 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="12PMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="1PM 13" class="row">
-              <div class="col-1 border border-silver topPad time-block">1PM</div>
-              <textarea id="13" class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=13 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="1PMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">1PM</div>
+              <textarea id="13" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=13 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="1PMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="2PM 14" class="row">
-              <div class="col-1 border border-silver topPad time-block">2PM</div>
-              <textarea id=14 class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=14 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="2PMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">2PM</div>
+              <textarea id=14 class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=14 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="2PMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="3PM 15"class="row" >
-              <div class="col-1 border border-silver topPad time-block">3PM</div>
-              <textarea id="15" class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=15 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="3PMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">3PM</div>
+              <textarea id="15" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=15 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="3PMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
             </div>
             <div id="4PM 16" class="row">
-              <div class="col-1 border border-silver topPad time-block">4PM</div>
-              <textarea id="16" class="col-9 border border-silver description textarea" placeholder="Type Notes Here"></textarea>
-              <button data-hour=16 class="col-1 border border-silver saveBtn saveBtn-i">Save Notes</button>
-              <button id="4PMClearBTN" class="col-1 border border-silver clearBtn clearBtn-i">Clear Notes</button>
+              <div class="col-1 time-block">4PM</div>
+              <textarea id="16" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=16 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="4PMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
+              </div>
+            <div id="5PM 17" class="row">
+              <div class="col-1 time-block">5PM</div>
+              <textarea id="17" class="col-9 border description textarea" placeholder="Type Notes Here"></textarea>
+              <button data-hour=17 class="col-1 border saveBtn saveBtn-i">Save Notes</button>
+              <button id="5PMClearBTN" class="col-1 border clearBtn clearBtn-i">Clear</button>
               </div>
             </div>
           </div>

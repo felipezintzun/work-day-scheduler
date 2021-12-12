@@ -1,4 +1,4 @@
-//Time
+// TIME 
 let update = function () {
     document.getElementById("currentDay").innerHTML = moment().format(
       "dddd, MMM Do, h:mm:ss a"
@@ -6,7 +6,7 @@ let update = function () {
   };
   setInterval(update, 1000);
   
-  //Clear Btns
+  // CLEAR BUTTONS 
   $("#9AMClearBTN").click(function () {
     $("#9").val("");
     localStorage.setItem(9, "");
@@ -46,11 +46,16 @@ let update = function () {
     $("#16").val("");
     localStorage.setItem(16, "");
   });
+
+  $("#5PMClearBTN").click(function () {
+    $("#17").val("");
+    localStorage.setItem(17, "");
+  });
   
-  //Save Btns
+  // SAVE BUTTONS
   
   $(document).ready(function () {
-    let timeSlots = [9, 10, 11, 12, 13, 14, 15, 16];
+    let timeSlots = [9, 10, 11, 12, 13, 14, 15, 16, 17];
     function renderPlans() {
       for (let i = 0; i <= timeSlots.length; i++) {
         $("#" + timeSlots[i]).val(localStorage.getItem(timeSlots[i]));
@@ -67,31 +72,5 @@ let update = function () {
     });
   });
   
-  // Change color based on time
-  const rows = $(".row");
-  let currentHour = parseInt(moment().hours());
-  
-  Array.from(rows).forEach((row) => {
-    let rowIdString = row.id,
-      rowHour;
-    if (rowIdString) {
-      rowHour = parseInt(rowIdString);
-    }
-    if (rowHour < 8) {
-      rowHour += 12;
-    }
-    if (rowHour) {
-      // Compares row id to current hour and sets color accordingly
-      if (currentHour === rowHour) {
-        setColor(row, "lightgreen");
-      } else if (currentHour < rowHour) {
-        setColor(row, "lightgrey");
-      } else if (currentHour > rowHour) {
-        setColor(row, "grey");
-      }
-    }
-  });
-  
-  function setColor(element, color) {
-    element.style.backgroundColor = color;
-  }
+  // CHANGE COLORS 
+
