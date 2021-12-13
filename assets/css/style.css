@@ -96,5 +96,9 @@ textarea{
 }
 
 .footer {
+  display: flex;
+  justify-content: center; 
   color: white;
+  color: #474b4f;
+  font-family: 'Orbitron', sans-serif;
 }
