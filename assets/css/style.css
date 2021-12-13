@@ -43,6 +43,7 @@ textarea{
 .time-block {
   text-align: center;
   color: white;
+  font-family: 'Orbitron', sans-serif;
   
   /* border-radius: 15px; */
   /* background: white; */
@@ -68,10 +69,12 @@ textarea{
 
 .present {
   background-color: white;
+  color: #222629;
 }
 
 .future {
   background-color: #6b6e70;
+  color: white;
 }
 
 .saveBtn {

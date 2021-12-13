@@ -1,4 +1,4 @@
-// TIME 
+// TIME
 let update = function () {
     document.getElementById("currentDay").innerHTML = moment().format(
       "dddd, MMM Do, h:mm:ss a"
@@ -23,6 +23,7 @@ let update = function () {
       }
     }
     renderPlans();
+
     // SAVE BUTTON
     $(".saveBtn").click(function () {
       let dataHour = $(this).attr("data-hour");
@@ -37,8 +38,6 @@ let update = function () {
         $("#" + dataHour).val("");
         localStorage.setItem(dataHour, "");
       });
-
-
   });
   
 
